@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Server Overview</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="dark">
+    <div id="app">
+        <header>
+            <h1 id="server-name">Loading Server...</h1>
+            <div id="roles-display" class="roles-container"></div>
+            <div id="status-badge" class="fade-in">
+                <span class="ping"></span>
+                <span id="online-count">0</span> Members Online
+            </div>
+        </header>
+
+        <main>
+            <section class="widget-container">
+                <iframe src="https://discord.com/widget?id=1379130532675457136&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </section>
+
+            <section class="overview">
+                <h2>Online Members</h2>
+                <div id="member-grid" class="member-grid"></div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
